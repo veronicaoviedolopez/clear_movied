@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\verap\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\verap\\.nuget\\packages"
+    ]
+  }
+}
