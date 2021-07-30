@@ -77,8 +77,9 @@ namespace back_end.Controllers
             await HttpContext.InsertarParametrosPaginacionEnCabecera(moviesQueryable);
 
             var peliculas = await moviesQueryable                   
-            .Include(x => x.MoviesGenres).ThenInclude(x => x.Genre)
-            .Include(x => x.MoviesActors).ThenInclude(x => x.Actor).ToListAsync();
+            //.Include(x => x.MoviesGenres).ThenInclude(x => x.Genre)
+           // .Include(x => x.MoviesActors).ThenInclude(x => x.Actor)
+           .ToListAsync();
             return mapper.Map<List<MovieDTO>>(peliculas);
         }
     }

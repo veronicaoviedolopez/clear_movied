@@ -78,6 +78,7 @@ namespace back_end
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors(); // habilitamos los CORS
 
             app.UseAuthorization();
 
